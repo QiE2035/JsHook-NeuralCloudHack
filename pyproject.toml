@@ -1,0 +1,11 @@
+[project]
+name = "NeuralCloudHack"
+version = "0.1.0"
+dependencies = ["frida-tools", "frida==16.2.1"]
+requires-python = "==3.10.*"
+
+[tool.pdm]
+distribution = false
+
+[tool.pdm.scripts]
+frida = "frida -H 127.0.0.1:28042 -l dist/index.js -f com.sunborn.neuralcloud.cn.bilibili"

@@ -1,0 +1,15 @@
+{
+    "compilerOptions": {
+      "target": "ESNext",
+      "lib": [ "ESNext" ],
+      // "experimentalDecorators": true,
+      "module": "NodeNext",
+      // "allowJs": false,
+      // "noEmit": false,
+      // "esModuleInterop": false,
+      "moduleResolution": "NodeNext",
+      "strict": true,
+      // "sourceMap": true
+    },
+    // "files": [ "index.ts" ]
+  }

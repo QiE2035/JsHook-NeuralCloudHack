@@ -1,0 +1,20 @@
+{
+  "name": "neural-cloud-hack",
+  "main": "index.ts",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node script/build.mjs",
+    "watch": "node script/watch.mjs",
+    "forward": "adb forward tcp:28042 tcp:28042",
+    "frida": "pdm run frida -H 127.0.0.1:28042 -l dist/index.js -f com.sunborn.neuralcloud.cn.bilibili"
+  },
+  "devDependencies": {
+    "@types/frida-gum": "16.2.1",
+    "frida-il2cpp-bridge": "*"
+  },
+  "dependencies": {
+    "esbuild": "^0.23.0"
+  }
+}
